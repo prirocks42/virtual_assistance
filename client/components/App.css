@@ -1,7 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
 .bgColorGreen {
 	background-color: grey;
 }
 
 .heading {
 	font-style: italic;
+}
+
+.middleContent {
+	width:100%;
+	height: 100%;
+}
+
+.header {
+	margin-bottom: 10px;
+}
+
+.sideMenu {
+	min-width:50px;
+	width: 8vw;
+	height: 80vh;
+	position: fixed;
+	background-color:#070252;
+	color:#d6d4f7;
+}
+
+.sideMenu .SideMenu ul {
+	list-style: none;
+}
+
+.sideMenu .SideMenu ul{
+	float: left;
+}
+
+.sideMenu .SideMenu ul li a{
+	color: white;
+	float: left;
+}
+
+.content {
+	min-width: 200px;
+	width: 88vw;
+	float: right;
+	height: 80vh;
+	position: fixed;
+	background-color: #f3f2ff;
+	position: relative;
+
 }
