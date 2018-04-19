@@ -1,0 +1,18 @@
+.Card {
+ width: 60vw;
+ height: auto;
+ padding: 4px;
+ padding-bottom:20px;
+ margin: 10px;
+ display: flex;
+ flex-direction: column;
+ text-align: left;
+ color: #5b52ef;
+ border:0.2px solid #c0bcff;
+ background-color:#f0efff;   
+}
+
+.Card span {
+    width:100%;
+    height: auto;
+}

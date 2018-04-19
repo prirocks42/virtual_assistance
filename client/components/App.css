@@ -39,7 +39,7 @@ body {
 }
 
 .sideMenu .SideMenu ul li a{
-	color: white;
+	color:#cfccfd;
 	float: left;
 }
 
@@ -47,7 +47,6 @@ body {
 	min-width: 200px;
 	width: 88vw;
 	float: right;
-	height: 80vh;
 	position: fixed;
 	background-color: #f3f2ff;
 	position: relative;

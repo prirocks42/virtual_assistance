@@ -1,5 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router';
+import ToDo from './ToDo';
+import { Route,Link } from 'react-router-dom';
+import './SideMenu.css';
 class SideMenu extends React.Component {
   render(){
 
@@ -10,7 +12,7 @@ class SideMenu extends React.Component {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/blog"> Blog</Link>
             </li>
-            <li><Link to="/todo">Todo</Link></li>
+            <li><Link to="todo">Todo</Link></li>
 
         </ul>
       </div>

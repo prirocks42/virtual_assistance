@@ -1,0 +1,13 @@
+.SideMenu ul li {
+    margin-left: -37px;
+    text-decoration: none;
+
+}
+
+.SideMenu ul li a{
+    text-decoration: none;
+
+}
+
+.SideMenu ul li a:active{
+}

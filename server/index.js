@@ -1,11 +1,17 @@
 import express from 'express';
 import path from 'path';
 import webpack from 'webpack';
+import bodyParser from 'body-parser';
 import webpackMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
+import mongodb from 'mongodb';
 import webpackConfigDev from '../webpack.config.dev.js';
 import webpackConfigProd from '../webpack.config.prod.js';
 import route from './routes/index.js';
+
+const mongoClient = mongodb.MongoClient;
+
+const url = `mongodb://rahulrana95:9068390682Rr@ds147589.mlab.com:47589/alexa_va`;
 
 const router = express.Router();
 let app = express();
@@ -34,11 +40,22 @@ if(process.env.mode == 'PRODUCTION') {
     app.use(webpackHotMiddleware(compiler));
     console.log('Running in development mode...');
 }
+
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
+mongoClient.connect(url, function(err, db) {
+    if (err) throw err;
+    console.log("Database created!");
+    app.set('db',db);
+  });
+
+
 for (var x in route ){
 	app.use('/api',require(path.join(__dirname+'/routes/',route[x])));
 }
 
-app.get('/', (request, response) => {
+app.get('/*', (request, response) => {
   response.sendFile(path.join(__dirname,'../public/index.html'));
 });
 
