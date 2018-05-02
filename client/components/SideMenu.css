@@ -1,11 +1,17 @@
 .SideMenu ul li {
-    margin-left: -37px;
+    margin-left: -17px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.SideMenu ul li a{
     text-decoration: none;
 
 }
 
-.SideMenu ul li a{
-    text-decoration: none;
+.SideMenu ul li {
+  display: inline-block;
 
 }
 

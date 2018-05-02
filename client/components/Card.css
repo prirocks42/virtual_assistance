@@ -1,18 +1,40 @@
 .Card {
- width: 60vw;
+ width: 95%;
  height: auto;
  padding: 4px;
- padding-bottom:20px;
- margin: 10px;
+ margin: 15px;
  display: flex;
- flex-direction: column;
+ flex-direction: row;
  text-align: left;
- color: #5b52ef;
- border:0.2px solid #c0bcff;
- background-color:#f0efff;   
+ color: #202020	;
+ border-bottom:0.5px solid#F0F0F0		;
+    
 }
 
-.Card span {
-    width:100%;
+.Card div:nth-of-type(4) {
+    width:15%;
     height: auto;
+    text-align: center;
+   
+}
+
+.Card div:nth-of-type(3) {
+    width:20%;
+    height: auto;
+    text-align: right;
+    
+}
+
+.Card div:nth-of-type(2) {
+    width:58%;
+    text-align: left;
+    height: auto;
+   
+}
+
+.Card div:nth-of-type(1) {
+    width:7%;
+    text-align: left;
+    height: auto;
+   
 }

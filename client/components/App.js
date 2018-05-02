@@ -3,6 +3,7 @@ import LoginSignup from './LoginSignup/LoginSignup';
 import SearchAlexa from './SearchAlexa';
 import SideMenu from './SideMenu';
 import ToDo from './ToDo';
+import Blog from './Blog';
 import {Route,Link} from 'react-router-dom';
 
 import './App.css';
@@ -21,9 +22,11 @@ class App extends React.Component {
         </div>
           <div className="content" style={{ padding:'10px' }}>
           <Route path={`${this.props.match.url}todo`} exact component={ToDo}  />
+          <Route path={`${this.props.match.url}blog`} exact component={Blog}  />
           </div>
       </div>
-      <div className="footer"></div>
+      <div className="footer">
+      </div>
       </div>
     );
   }

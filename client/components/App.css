@@ -2,11 +2,10 @@
 
 body {
 	font-family: 'Ubuntu', sans-serif;
+	background-color:white;
 }
 
-.bgColorGreen {
-	background-color: grey;
-}
+
 
 .heading {
 	font-style: italic;
@@ -22,12 +21,13 @@ body {
 }
 
 .sideMenu {
-	min-width:50px;
+	min-width:70px;
 	width: 8vw;
-	height: 80vh;
+	height: 100vh;
+	border-radius: 10px;
 	position: fixed;
-	background-color:#070252;
-	color:#d6d4f7;
+	color:#F5F5F5	;
+	background-color: #080808	;
 }
 
 .sideMenu .SideMenu ul {
@@ -35,12 +35,15 @@ body {
 }
 
 .sideMenu .SideMenu ul{
-	float: left;
+	
 }
 
 .sideMenu .SideMenu ul li a{
-	color:#cfccfd;
-	float: left;
+	color:#E8E8E8	;
+	
+}
+.sideMenu .SideMenu ul li img{	
+	margin-right: 3px;
 }
 
 .content {
@@ -48,7 +51,80 @@ body {
 	width: 88vw;
 	float: right;
 	position: fixed;
-	background-color: #f3f2ff;
-	position: relative;
-
+		position: relative;
 }
+
+.icon {
+	width:10px;
+	height: 10px;
+	padding: 2px;
+}
+
+.iconMedium {
+	width:20px;
+	height: 20px;
+	padding: 2px;
+}
+
+
+.todoContent {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	
+	align-items: flex-start;
+	
+}
+
+
+.todoContent .upcomingTasks{
+	flex-basis:45%;
+	
+}
+
+
+.todoContent .todoSideMenu{
+	flex-basis:43%;	
+}
+
+
+.buttonSmall {
+	border-radius: 5px;
+	padding:5px;
+	margin:2px;
+	border:1px solid #D0D0D0		;
+	color:#484848	;
+}
+
+.buttonMedium {
+	border-radius: 5px;
+	padding:7px;
+	margin:4px;
+	border:1px solid #D0D0D0		;
+	color:#484848	;
+}
+
+/**/
+input[type=text],input[type=time],input[type=date] {
+	padding: 10px !important;
+	box-sizing: border-box;
+	border-radius: 3px;
+	width:100%; 
+	letter-spacing: 1px;
+	border: 0; padding: 7px 0; border-bottom: 1px solid #ccc;
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+
+input[type=text] ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.4s;}
+input[type=text]:focus ~ .focus-border{width: 100%; transition: 0.4s;}
+
+input[type=text]:focus{outline: none;}
+/**/
+
+.modalAddTask {
+	padding: 20px;
+}
+
+button:focus{outline: none;}

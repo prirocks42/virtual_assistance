@@ -4,7 +4,7 @@ class SearchAlexa extends React.Component {
   render(){
 
     return (
-      <div style={{width:'100%' }}>
+      <div style={{width:'100%',marginTop:'20px' }}>
       <center><input style={{width:'50%' }} type="text" placeholder="Ask me anything" /></center>
       </div>
     );
